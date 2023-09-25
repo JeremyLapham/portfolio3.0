@@ -1,9 +1,10 @@
 "use client"
 import './page.module.css'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import Intro from './Components/introduction/intro'
 import Skills from './Components/skills/skills'
 import Projects from './Components/projects/projects'
+import ContactMe from './Components/contactMe/contactMe'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
           <Intro />
         </Col>
       </Row>
-      <Row className='skills'>
+      <Row className='secondBG'>
         <Col>
           <Skills />
         </Col>
@@ -21,6 +22,11 @@ export default function Home() {
       <Row>
         <Col>
           <Projects />
+        </Col>
+      </Row>
+      <Row className='secondBG'>
+        <Col>
+          <ContactMe />
         </Col>
       </Row>
     </Container>

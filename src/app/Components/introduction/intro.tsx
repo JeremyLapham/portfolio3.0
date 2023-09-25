@@ -1,11 +1,9 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { BsLinkedin } from 'react-icons/bs';
-import { FaSquareGithub } from 'react-icons/fa6';
-import { FaNewspaper } from 'react-icons/fa6';
 import Navbar from '../navbar/navbar';
 import Image from 'next/image';
 import me from '../../Images/meside.png';
+import { introIcons } from '@/app/objects/icons';
 
 export default function Intro() {
     return (
@@ -13,11 +11,11 @@ export default function Intro() {
             <Row style={{ paddingTop: '130px' }}>
                 <Row>
                     <Col lg={8}>
-                            <h1 style={{position: 'relative'}}>
-                                Jeremy
+                            <h1 style={{position: 'relative', letterSpacing: 25}}>
+                                JEREMY
                             <Image className='meImage' src={me} alt='me as a big png' />
                             </h1>
-                            <h1 className='ms-5'>Lapham</h1>
+                            <h1 className='ms-5' style={{letterSpacing: 25}}>LAPHAM</h1>
                     </Col>
                     <Col>
                         <Navbar />
@@ -25,15 +23,13 @@ export default function Intro() {
                 </Row>
                 <Row>
                     <Col lg={8} className='d-flex align-items-center justify-content-start'>
-                        <div>
-                            <BsLinkedin size={50} />
-                        </div>
-                        <div>
-                            <FaSquareGithub size={57} />
-                        </div>
-                        <div>
-                            <FaNewspaper size={53} />
-                        </div>
+                        {introIcons.map((icon: any) => {
+                            return (
+                                <a href={`${icon.link}`} target='_blank' className='ms-5 mt-5'>
+                                    {icon.icon}
+                                </a>
+                            )
+                        })}
                     </Col>
                     <Col className='mt-5'>
                         <h3 style={{ color: '#909090' }}>-INTRODUCTION</h3>

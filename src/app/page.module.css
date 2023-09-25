@@ -1,5 +1,10 @@
 .navbar {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    border-radius: 20%;
 }
 
 .navbar.sticky {
@@ -8,9 +13,18 @@
     left: 0;
     right: 0;
     z-index: 999;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-color: #2C3033;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    background-color: #374450;
     transition: all 0.3s ease-in-out;
+    animation: slideIn 0.5s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+}
+
+.navbar.sticky a {
+    margin: 100px;
 }
 
 .meImage {
@@ -23,7 +37,39 @@
     transform: rotateY(180deg);
 }
 
-.skills {
+.secondBG {
     background-color: #2C3033 !important;
     min-height: 100vh !important;
+}
+
+.skillBoxes {
+    background-color: grey;
+    height: 500px;
+    width: 500px;
+    border-radius: 20%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    background: #CB4B16;
+    border-radius: 80%;
+    backface-visibility: hidden;
+  }
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }

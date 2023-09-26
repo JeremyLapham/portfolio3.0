@@ -1,14 +1,16 @@
 "use client"
 import './page.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
-import Intro from './Components/introduction/intro'
-import Skills from './Components/skills/skills'
-import Projects from './Components/projects/projects'
-import ContactMe from './Components/contactMe/contactMe'
+import Intro from '@/app/Components/introduction/intro'
+import Skills from '@/app/Components/skills/skills'
+import Projects from '@/app/Components/projects/projects'
+import ContactMe from '@/app/Components/contactMe/contactMe'
+import MouseEffect from '@/app/Components/mouseEffect/mouseEffect'
 
 export default function Home() {
   return (
     <Container fluid>
+        <MouseEffect />
       <Row>
         <Col>
           <Intro />

@@ -1,10 +1,9 @@
 .navbar {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.0000001s ease-in-out;
 }
 
 .navbar a:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    border-radius: 20%;
+    text-shadow: 10px 10px 200px rgb(255, 0, 0);
 }
 
 .navbar.sticky {
@@ -33,21 +32,14 @@
     border-radius: 10%;
     object-fit: contain;
     z-index: -1;
-    right: 100px;
+    right: -200px;
+    top: 100px;
     transform: rotateY(180deg);
 }
 
 .secondBG {
     background-color: #2C3033 !important;
     min-height: 100vh !important;
-}
-
-.skillBoxes {
-    background-color: grey;
-    height: 500px;
-    width: 500px;
-    border-radius: 20%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .circle {
@@ -61,6 +53,54 @@
     border-radius: 80%;
     backface-visibility: hidden;
   }
+
+  .projectImage {
+    height: 400px;
+    width: 700px;
+    object-fit: contain;
+  }
+
+  .repoText {
+    text-decoration: none;
+    color: white !important;
+  }
+
+  .skillBox {
+    min-height: 450px;
+    aspect-ratio: 20/5;
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  }
+
+  .projectName {
+    font-size: 95px !important; 
+  }
+
+  .projectIconBox {
+    min-height: auto;
+    width: auto;
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  }
+
+  .active {
+    color: green !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

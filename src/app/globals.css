@@ -16,6 +16,19 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
 h1 {
   font-size: 110px;
   font-family: headers;
@@ -29,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 27px;
   font-family: text;
   text-shadow: 0 0 25px rgb(0, 0, 0);
 }
@@ -39,23 +52,9 @@ h3 {
 }
 
 .aTagToHTwo {
-  color: white !important;
+  color: white ;
   text-decoration: none !important;
-  font-size: 36px !important;
+  font-size: 50px !important;
   font-weight: 500;
   font-family: text;
-  text-shadow: 0 0 25px rgb(0, 0, 0);
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #eee;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  border-radius: 10px;
 }

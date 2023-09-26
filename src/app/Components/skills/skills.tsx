@@ -13,68 +13,69 @@ export default function Skills() {
           </h1>
         </Col>
       </Row>
-      <Row>
-        <Col className='d-flex justify-content-center'>
+      <Row className='mt-5'>
+        <Col className='d-flex justify-content-start'>
           <h2>Languages</h2>
         </Col>
         <Col className='d-flex justify-content-center'>
           <h2>Frameworks</h2>
         </Col>
-        <Col className='d-flex justify-content-center'>
+        <Col className='d-flex justify-content-end'>
           <h2>Production</h2>
         </Col>
       </Row>
-      <Row className='mt-5'>
-        <Col>
-          <Row className='skillBoxes'>
-            <MouseEffect />
-            {skillIconLanguages.map((skill: any) => {
-              return (
-                <Col lg={6} className='d-flex flex-column justify-content-center align-items-center'>
-                  <div>
-                    {skill.icon}
-                  </div>
-                  <h3>
-                    {skill.text}
-                  </h3>
-                </Col>
-              )
-            })}
-          </Row>
-        </Col>
-        <Col>
-          <Row className='skillBoxes'>
-            {skillIconFrameworks.map((skill: any) => {
-              return (
-                <Col lg={6} className='d-flex flex-column justify-content-center align-items-center'>
-                  <div>
-                    {skill.icon}
-                  </div>
-                  <h3>
-                    {skill.text}
-                  </h3>
-                </Col>
-              )
-            })}
-          </Row>
-        </Col>
-        <Col>
-          <Row className='skillBoxes'>
-            {skillIconProductions.map((skill: any) => {
-              return (
-                <Col lg={6} className='d-flex flex-column justify-content-center align-items-center'>
-                  <div>
-                    {skill.icon}
-                  </div>
-                  <h3>
-                    {skill.text}
-                  </h3>
-                </Col>
-              )
-            })}
-          </Row>
-        </Col>
-      </Row>
+      <div className='d-flex justify-content-center'>
+        <Row className='skillBox d-flex align-items-center'>
+          <Col>
+            <Row style={{borderRight: '1px solid black'}}>
+              {skillIconLanguages.map((skill: any) => {
+                return (
+                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center'>
+                    <div>
+                      {skill.icon}
+                    </div>
+                    <h3 className='mb-5'>
+                      {skill.text}
+                    </h3>
+                  </Col>
+                )
+              })}
+            </Row>
+          </Col>
+          <Col>
+            <Row style={{borderRight: '1px solid black'}}>
+              {skillIconFrameworks.map((skill: any) => {
+                return (
+                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center'>
+                    <div>
+                      {skill.icon}
+                    </div>
+                    <h3 className='mb-5'>
+                      {skill.text}
+                    </h3>
+                  </Col>
+                )
+              })}
+            </Row>
+          </Col>
+          <Col>
+            <Row>
+              {skillIconProductions.map((skill: any) => {
+                return (
+                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center'>
+                    <div>
+                      {skill.icon}
+                    </div>
+                    <h3 className='mb-5'>
+                      {skill.text}
+                    </h3>
+                  </Col>
+                )
+              })}
+            </Row>
+          </Col>
+        </Row>
+      </div>
     </Container>
   )
 }

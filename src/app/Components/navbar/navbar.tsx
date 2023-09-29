@@ -18,9 +18,9 @@ export default function navbar() {
             }
 
             const introductionOffset = introductionElement.offsetTop;
-            const skillsOffset = skillsElement.offsetTop;
-            const projectsOffset = projectsElement.offsetTop;
-            const contactOffset = contactElement.offsetTop;
+            const skillsOffset = skillsElement.offsetTop - 100;
+            const projectsOffset = projectsElement.offsetTop - 100;
+            const contactOffset = contactElement.offsetTop - 100;
 
             const scrollY = window.scrollY;
 
@@ -34,7 +34,6 @@ export default function navbar() {
                 setActiveSection('contact');
             }
 
-            // Check if the navbar should be sticky
             if (scrollY > 130) {
                 setIsSticky(true);
             } else {

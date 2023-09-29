@@ -23,9 +23,9 @@ export default function Intro() {
                 </Row>
                 <Row>
                     <Col lg={8} className='d-flex align-items-center justify-content-start'>
-                        {introIcons.map((icon: any) => {
+                        {introIcons.map((icon: any, idx: number) => {
                             return (
-                                <a key={icon.link} href={`${icon.link}`} target='_blank' className='ms-5 mt-5'>
+                                <a key={idx} href={`${icon.link}`} target='_blank' className='ms-5 mt-5'>
                                     {icon.icon}
                                 </a>
                             )

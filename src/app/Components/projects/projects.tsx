@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import projectSet from '@/app/objects/projectCardInfo';
 import Image from 'next/image';
 
@@ -26,12 +26,12 @@ export default function projects() {
                     <h1>{projectItem.name}</h1>
                   </Col>
                 </Row>
-                <Row>
-                  <Col lg={projectItem.projectRepo?.github?.icon ? 10 : 12 }>
+                <Row className={`d-flex ${projectItem.id % 2 ? '' : 'flex-row-reverse'}`}>
+                  <Col lg={projectItem.projectRepo?.github?.icon ? 10 : 12}>
                     <h2>{projectItem.languages}</h2>
                   </Col>
-                  <Col lg={projectItem.projectRepo?.github?.icon ? 2 : 0 }>
-                    <a title={`${projectItem.projectRepo?.title ?? null}`} href={projectItem.projectRepo?.repoLink ?? null} className="repoText d-flex" target="_blank">
+                  <Col lg={projectItem.projectRepo?.github?.icon ? 2 : 0}>
+                    <a title={`${projectItem.projectRepo?.title ?? null}`} href={projectItem.projectRepo?.repoLink ?? null} className={`d-flex ${projectItem.id % 2 ? '' : 'flex-row-reverse'} repoText`} target="_blank">
                       <h3>
                         {projectItem.projectRepo?.github?.icon ?? null}
                       </h3>
@@ -45,24 +45,23 @@ export default function projects() {
                   {projectItem.languageIcon.map(
                     (icon: any) => {
                       return (
-                        <Col key={icon.icon} lg={projectItem.languageIcon.length > 3 ? 2 : 3} className='d-flex flex-column align-items-center justify-content-between mt-1 mb-1' >
+                        <Col key={icon.text} lg={projectItem.languageIcon.length > 3 ? 2 : 3} className='d-flex flex-column align-items-center justify-content-between mt-1 mb-1' >
                           <div>{icon.icon}</div>
                         </Col>
                       );
                     }
                   )}
                 </Row>
-                <h3 className='mt-3'>{projectItem.description}</h3>
-                <div className="d-flex justify-content-center">
-                  <a
-                    className="mb-5"
-                    href={projectItem.linkToSite}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Check it out!
-                  </a>
-                </div>
+                <Row>
+                  <Col className="d-flex justify-content-center mt-3">
+                    <Button variant='' className="checkItOutBtn" href={projectItem.linkToSite} target="_blank" rel="noopener noreferrer"> Check it out!</Button>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <h3 className='mt-3 mb-5'>{projectItem.description}</h3>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           );

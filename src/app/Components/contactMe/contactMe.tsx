@@ -5,10 +5,6 @@ import ToastComponent from '../toast/toastComponent';
 import swal from 'sweetalert';
 
 export default function contactMe() {
-    const [good, setGood] = useState(false);
-    const [bad, setBad] = useState(false);
-
-    const toggleShowA = () => setGood(!good);
 
     const [from_name, setFrom_Name] = useState('');
     const [message, setMessage] = useState('');
@@ -21,20 +17,14 @@ export default function contactMe() {
     }
     const sendEmail = () => {
         if (message === '' && from_name === '') {
-
+            swal('Please make sure to fill in both forms')
         } else {
             emailjs.send(`${process.env.NEXT_PUBLIC_SERVICE_ID}`, `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`, emailToSendToMe, `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`)
                 .then(function (response: any) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    setGood(true);
+                    swal('SUCCESS your message was sent')
                 }, function (error: any) {
-                    console.log('FAILED...', error);
-                    setBad(true);
+                    swal('FAILURE there was an issue with your message please try again')
                 });
-            setTimeout(() => {
-                setGood(false)
-                setBad(false)
-            }, 500);
         }
     }
 
@@ -60,11 +50,9 @@ export default function contactMe() {
                                 <Form.Control as="textarea" rows={3} placeholder='Message goes here' value={message} onChange={(e: any) => setMessage(e.target.value)} />
                             </Form.Group>
                         </Form>
-                        <Button onClick={toggleShowA}>
+                        <Button onClick={sendEmail}>
                             Send Email
                         </Button>
-                        {bad && <ToastComponent status={'FAILURE'} />}
-                        {good && <ToastComponent status={'SUCCESS'} />}
                     </div>
                 </Col>
             </Row>

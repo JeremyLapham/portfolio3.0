@@ -19,7 +19,7 @@
 }
 
 .navbar.sticky a {
-    margin: 100px;
+    margin: 0 100px;
 }
 
 .meImage {
@@ -63,7 +63,7 @@
 
 .skillBox {
     min-height: 450px;
-    aspect-ratio: 20/6;
+    width: auto;
     background-color: grey;
     border-radius: 10px;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
@@ -154,18 +154,9 @@
     object-fit: contain;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.contactMargin {
+    margin: 0 200px;
+}
 
 @keyframes slideIn {
     from {
@@ -174,5 +165,22 @@
 
     to {
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .skillBox {
+        width: auto;
+    }
+    .contactMargin {
+        margin: 0 85px;
+    }
+}
+@media (max-width: 980px) {
+    .meImage {
+        right: -100px;
+    }
+    .contactMargin {
+        margin: 0 0;
     }
 }

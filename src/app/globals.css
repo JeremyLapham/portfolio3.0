@@ -58,3 +58,14 @@ h3 {
   font-weight: 500;
   font-family: text;
 }
+
+Image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .pageMargin {
+    padding: 0 85px;
+  }
+}

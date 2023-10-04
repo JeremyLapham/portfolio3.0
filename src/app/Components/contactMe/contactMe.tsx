@@ -39,7 +39,7 @@ export default function contactMe() {
             </Row>
             <Row>
                 <Col>
-                    <div style={{ margin: '0px 200px' }}>
+                    <div className='contactMargin'>
                         <Form>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                 <Form.Label>Your Email Address</Form.Label>

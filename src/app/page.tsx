@@ -10,7 +10,7 @@ import MouseEffect from '@/app/Components/mouseEffect/mouseEffect'
 export default function Home() {
   return (
     <Container fluid>
-        <MouseEffect />
+        {/* <MouseEffect /> */}
       <Row>
         <Col>
           <Intro />

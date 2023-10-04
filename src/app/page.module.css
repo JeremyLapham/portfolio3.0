@@ -2,10 +2,6 @@
     transition: all 0.0000001s ease-in-out;
 }
 
-.navbar a:hover {
-    text-shadow: 10px 10px 200px rgb(255, 0, 0);
-}
-
 .navbar.sticky {
     position: fixed;
     top: 0;
@@ -70,7 +66,7 @@
     aspect-ratio: 20/6;
     background-color: grey;
     border-radius: 10px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
 }
 
 .projectName {
@@ -86,7 +82,7 @@
 }
 
 .active {
-    color:#44FFD1 !important;
+    color: #44FFD1 !important;
 }
 
 .checkItOutBtn {
@@ -96,7 +92,7 @@
     font-size: 14px;
     line-height: 1;
     border-radius: 500px;
-    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-property: background-color, border-color, color, box-shadow, filter;
     transition-duration: .3s;
     border: 1px solid transparent;
     letter-spacing: 2px;
@@ -112,9 +108,50 @@
     height: 48px;
 }
 
-.checkItOutBtn:hover{
+.checkItOutBtn:hover {
     color: #fff;
     background-color: #616467;
+}
+
+.iconShadow {
+    filter: drop-shadow(0 0 35px rgba(0, 0, 0, 0.75));
+}
+
+.contactBox {
+    border: 3px solid #000;
+    border-radius: 5px;
+    height: 50px;
+    line-height: normal;
+    color: #282828;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    user-select: auto;
+    font-size: 16px;
+    padding: 0 6px;
+    padding-left: 12px;
+}
+
+.contactBox:focus {
+    border: 3px solid #5551ff;
+}
+
+.custom-modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.imgModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.resume {
+    height: 100vh;
+    object-fit: contain;
 }
 
 

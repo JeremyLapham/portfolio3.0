@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { skillIconLanguages, skillIconFrameworks, skillIconProductions } from '@/app/objects/icons';
-import MouseEffect from '../mouseEffect/mouseEffect';
 
 export default function Skills() {
   return (
@@ -18,7 +17,7 @@ export default function Skills() {
           <h2>Languages</h2>
         </Col>
         <Col className='d-flex justify-content-center'>
-          <h2>Frameworks</h2>
+          <h2>Frameworks/Library</h2>
         </Col>
         <Col className='d-flex justify-content-end'>
           <h2>Production</h2>
@@ -30,7 +29,7 @@ export default function Skills() {
             <Row style={{borderRight: '1px solid black'}}>
               {skillIconLanguages.map((skill: any) => {
                 return (
-                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center'>
+                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center iconShadow'>
                     <div>
                       {skill.icon}
                     </div>
@@ -46,7 +45,7 @@ export default function Skills() {
             <Row style={{borderRight: '1px solid black'}}>
               {skillIconFrameworks.map((skill: any) => {
                 return (
-                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center'>
+                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center iconShadow'>
                     <div>
                       {skill.icon}
                     </div>
@@ -62,7 +61,7 @@ export default function Skills() {
             <Row>
               {skillIconProductions.map((skill: any) => {
                 return (
-                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center'>
+                  <Col key={skill.text} lg={6} className='d-flex flex-column justify-content-center align-items-center iconShadow'>
                     <div>
                       {skill.icon}
                     </div>

@@ -4,7 +4,7 @@ import { Row, Col, Button } from 'react-bootstrap';
 
 export default function navbar() {
     const [isSticky, setIsSticky] = useState(false);
-    const [activeSection, setActiveSection] = useState('');
+    const [activeSection, setActiveSection] = useState('introduction');
 
     useEffect(() => {
         const handleScroll = () => {

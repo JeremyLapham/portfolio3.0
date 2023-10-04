@@ -16,7 +16,7 @@ export default function contactMe() {
         user_email: "jeremyslapham@gmail.com",
     }
     const sendEmail = () => {
-        if (message === '' && from_name === '') {
+        if (message === '' || from_name === '') {
             swal('Please make sure to fill in both forms')
         } else {
             emailjs.send(`${process.env.NEXT_PUBLIC_SERVICE_ID}`, `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`, emailToSendToMe, `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`)
@@ -42,12 +42,12 @@ export default function contactMe() {
                     <div style={{ margin: '0px 200px' }}>
                         <Form>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                <Form.Label>Your Email address</Form.Label>
-                                <Form.Control type="email" placeholder="name@example.com" value={from_name} onChange={(e: any) => setFrom_Name(e.target.value)} />
+                                <Form.Label>Your Email Address</Form.Label>
+                                <Form.Control className='contactBox' type="email" placeholder="name@example.com" value={from_name} onChange={(e: any) => setFrom_Name(e.target.value)} />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Your Message To Me</Form.Label>
-                                <Form.Control as="textarea" rows={3} placeholder='Message goes here' value={message} onChange={(e: any) => setMessage(e.target.value)} />
+                                <Form.Control as="textarea" rows={15} placeholder='Message goes here' value={message} onChange={(e: any) => setMessage(e.target.value)} />
                             </Form.Group>
                         </Form>
                         <Button onClick={sendEmail}>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Button, Form } from 'react-bootstrap'
 import emailjs from '@emailjs/browser'
-import ToastComponent from '../toast/toastComponent';
 import swal from 'sweetalert';
 
 export default function contactMe() {

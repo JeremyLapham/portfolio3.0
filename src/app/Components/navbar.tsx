@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../../page.module.css'
+import styles from '../page.module.css'
 import { Row, Col, Button } from 'react-bootstrap';
 
 export default function navbar() {

@@ -3,11 +3,11 @@
 
 @font-face {
   font-family: headers;
-  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(../app/Images/fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: text;
-  src: url(./fonts/Hind-Regular.ttf);
+  src: url(../app/Images/fonts/Hind-Regular.ttf);
 }
 
 body {

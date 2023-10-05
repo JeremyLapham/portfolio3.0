@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
-import Navbar from '../navbar/navbar';
+import Navbar from './navbar';
 import Image from 'next/image';
 import me from '@/app/Images/meside.png';
 import { introIcons } from '@/app/objects/icons';
-import resume from '../../Images/Jeremy\'s_Resume-1.png';
+import resume from '../Images/Jeremy\'s_Resume-1.png';
 
 export default function Intro() {
 

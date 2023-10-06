@@ -69,3 +69,23 @@ Image {
     padding: 0 85px;
   }
 }
+
+@media (max-width: 800px) {
+  .pageMargin {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+}

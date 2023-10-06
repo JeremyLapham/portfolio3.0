@@ -6,10 +6,12 @@ import Skills from '@/app/Components/skills'
 import Projects from '@/app/Components/projects'
 import ContactMe from '@/app/Components/contactMe'
 import MouseEffect from '@/app/Components/mouseEffect'
+import MobileNavbar from './Components/mobileNavbar'
 
 export default function Home() {
   return (
     <Container fluid>
+      <MobileNavbar />
         <MouseEffect />
       <Row>
         <Col>

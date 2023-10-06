@@ -67,5 +67,5 @@ export const skillIconProductions = [
     },
     { icon: <SiMicrosoftazure size={50} color="#2C3033" />, text: "Azure" },
     { icon: <SiGithub size={50} color="#2C3033" />, text: "GitHub" },
-    { icon: <SiAzuredevops size={50} color="#2C3033" />, text: "DevOps" },
+    { icon: <SiAzuredevops size={50} color="#2C3033" />, text: "Azure DevOps" },
 ];

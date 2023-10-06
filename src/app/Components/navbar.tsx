@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../page.module.css'
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 export default function navbar() {
     const [isSticky, setIsSticky] = useState(false);
@@ -49,7 +49,7 @@ export default function navbar() {
     }, []);
 
     return (
-        <nav className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
+        <nav className={`d-none d-xl-block ${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
             <div className='d-flex justify-content-start'>
                 <Row>
                     <Col>

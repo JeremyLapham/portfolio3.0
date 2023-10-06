@@ -42,7 +42,7 @@ export default function Intro() {
                                     variant=''
                                     onClick={handleShow}
                                     key={idx}
-                                    className='ms-5 mt-5 iconShadow'
+                                    className='iconShadow iconMargin flex-grow-2'
                                 >
                                     {icon.icon}
                                 </Button>
@@ -52,7 +52,7 @@ export default function Intro() {
                                     key={idx}
                                     href={`${icon?.link}`}
                                     target={`${icon?.target}`}
-                                    className='ms-5 mt-5 iconShadow'
+                                    className='iconShadow iconMargin flex-grow-2'
                                 >
                                     {icon.icon}
                                 </Button>

@@ -158,6 +158,10 @@
     margin: 0 200px;
 }
 
+.iconMargin {
+    margin: 48px 0 0 48px
+}
+
 @keyframes slideIn {
     from {
         transform: translateY(-100%);
@@ -172,15 +176,34 @@
     .skillBox {
         width: auto;
     }
+
     .contactMargin {
         margin: 0 85px;
     }
 }
-@media (max-width: 980px) {
+@media (max-width: 1000px) {
     .meImage {
-        right: -100px;
+        right: 0px;
     }
+}
+@media (max-width: 800px) {
+    .meImage {
+        right: 200px;
+    }
+
     .contactMargin {
-        margin: 0 0;
+        margin: 0;
     }
+}
+
+@media (max-width: 430px) {
+    .meImage {
+        right: 0;
+        height: 300px;
+    }
+
+    .iconMargin {
+        margin: 20px 0;
+    }
+
 }

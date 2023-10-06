@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import projectSet from '@/app/objects/projectCardInfo';
+import projectSet from '@/app/Components/objects/projectCardInfo';
 import Image from 'next/image';
 
 export default function projects() {

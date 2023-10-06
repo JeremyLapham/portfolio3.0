@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap'
-import { skillIconLanguages, skillIconFrameworks, skillIconProductions } from '@/app/objects/icons';
+import { skillIconLanguages, skillIconFrameworks, skillIconProductions } from '@/app/Components/objects/icons';
 
 export default function Skills() {
   return (

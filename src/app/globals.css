@@ -88,4 +88,8 @@ Image {
   h3 {
     font-size: 20px;
   }
+  Image {
+    max-width: 50%;
+    height: auto;
+  }
 }

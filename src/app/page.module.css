@@ -206,4 +206,10 @@
         margin: 20px 0;
     }
 
+    .projectImage {
+        height: 400px;
+        width: 400px;
+        object-fit: contain;
+    }
+
 }

@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 
 export default function MobileNavbar() {
   return (
-    <Navbar collapseOnSelect expand="xl" className="bg-body-tertiary d-sm-block d-md-block d-lg-block d-xl-none" >
+    <Navbar fixed='top' collapseOnSelect expand="xl" className="bg-body-tertiary d-sm-block d-md-block d-lg-block d-xl-none" >
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

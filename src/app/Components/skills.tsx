@@ -49,7 +49,7 @@ export default function Skills() {
                     <div>
                       {skill.icon}
                     </div>
-                    <h3 className='mb-5'>
+                    <h3 className='mb-5 noWordWrap'>
                       {skill.text}
                     </h3>
                   </Col>
@@ -65,7 +65,7 @@ export default function Skills() {
                     <div>
                       {skill.icon}
                     </div>
-                    <h3 className='mb-5'>
+                    <h3 className='mb-5 noWordWrap'>
                       {skill.text}
                     </h3>
                   </Col>

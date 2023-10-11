@@ -49,7 +49,7 @@ export default function navbar() {
     }, []);
 
     return (
-        <nav className={`d-none d-xl-block ${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
+        <nav className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
             <div className='d-flex justify-content-start'>
                 <Row>
                     <Col>

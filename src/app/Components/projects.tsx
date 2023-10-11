@@ -17,7 +17,7 @@ export default function projects() {
         {projectSet.map((projectItem: any) => {
           return (
             <Row key={projectItem.id}>
-              <Col className={`d-flex flex-column ${projectItem.id % 2 ? 'align-items-start' : 'align-items-end'}`}>
+              <Col className={`d-flex flex-column ${projectItem.id % 2 ? 'align-items-start' : 'align-items-end'} centerAll`}>
                 <Row className={`d-flex ${projectItem.id % 2 ? '' : 'flex-row-reverse'}`}>
                   <Col>
                     <Image className='projectImage' src={projectItem.img} alt="Project" />

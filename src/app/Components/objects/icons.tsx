@@ -61,11 +61,8 @@ export const skillIconFrameworks = [
 export const skillIconProductions = [
     { icon: <SiVisualstudio size={50} color="#2C3033" />, text: "Visual Studio" },
     { icon: <SiJira size={50} color="#2C3033" />, text: "Jira" },
-    {
-        icon: <SiVisualstudiocode size={50} color="#2C3033" />,
-        text: "Visual Studio Code",
-    },
+    { icon: <SiVisualstudiocode size={50} color="#2C3033" />, text: "VS Code",},
     { icon: <SiMicrosoftazure size={50} color="#2C3033" />, text: "Azure" },
     { icon: <SiGithub size={50} color="#2C3033" />, text: "GitHub" },
-    { icon: <SiAzuredevops size={50} color="#2C3033" />, text: "Azure DevOps" },
+    { icon: <SiAzuredevops size={50} color="#2C3033" />, text: "DevOps" },
 ];

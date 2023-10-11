@@ -23,19 +23,19 @@ export default function Intro() {
             </Modal>
             <Row style={{ paddingTop: '130px' }}>
                 <Row>
-                    <Col lg={6}>
-                        <h1 style={{ position: 'relative', letterSpacing: 25 }} className='nameWave'>
+                    <Col lg={6} md={12}>
+                        <h1 style={{ position: 'relative', letterSpacing: 25 }}>
                             JEREMY
                             <Image className='meImage' src={me} alt='me as a big png' />
                         </h1>
-                        <h1 className='ms-5' style={{ letterSpacing: 25 }}>LAPHAM</h1>
+                        <h1 className='name' style={{ letterSpacing: 25 }}>LAPHAM</h1>
                     </Col>
-                    <Col className='d-flex justify-content-end'>
+                    <Col lg={6} className='d-flex justify-content-end'>
                         <Navbar />
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={8} className='d-flex align-items-center justify-content-start'>
+                    <Col lg={8} md={12} className='d-flex align-items-center justify-content-start'>
                         {introIcons.map((icon, idx) => (
                             icon.show ? (
                                 <Button
@@ -59,9 +59,9 @@ export default function Intro() {
                             )
                         ))}
                     </Col>
-                    <Col className='mt-5'>
+                    <Col lg={4} md={12} className='mt-5'>
                         <h2 style={{ color: '#909090' }}>-INTRODUCTION</h2>
-                        <h3>I am a skilled Fullstack developer proficient in HTML, CSS, and JavaScript, with experience with React and Angular. Also have backend experience in C# and SQL Database. Passionate about creating visually appealing and responsive web applications. I strive to deliver high-quality products that make a positive impact.</h3>
+                        <h3 className='laptopScrollBox'>I am a skilled Fullstack developer proficient in HTML, CSS, and JavaScript, with experience with React and Angular. Also have backend experience in C# and SQL Database. Passionate about creating visually appealing and responsive web applications. I strive to deliver high-quality products that make a positive impact.</h3>
                     </Col>
                 </Row>
             </Row>

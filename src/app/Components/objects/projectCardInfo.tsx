@@ -117,7 +117,7 @@ const projectSet = [
         functionality.
       </>
     ),
-    linkToSite: "https://jeremysadvice-generator.vercel.app",
+    linkToSite: "https://jeremys-advice-generator.vercel.app",
     languageIcon: [
       { icon: <SiReact size={50} color="#2C3033" />, text: "React" },
       { icon: <SiJavascript size={50} color="#2C3033" />, text: "JavaScript" },

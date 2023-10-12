@@ -18,17 +18,17 @@ export default function projects() {
           return (
             <Row key={projectItem.id}>
               <Col className={`d-flex flex-column ${projectItem.id % 2 ? 'align-items-start' : 'align-items-end'} centerAll`}>
-                <Row className={`d-flex ${projectItem.id % 2 ? '' : 'flex-row-reverse'}`}>
-                  <Col>
+                <Row className={`d-flex ${projectItem.id % 2 ? '' : 'flex-row-reverse'} mb-5`}>
+                  <Col xl={6} lg={12} md={12} className='d-flex justify-content-center align-items-center'>
                     <Image className='projectImage' src={projectItem.img} alt="Project" />
                   </Col>
-                  <Col className='projectName d-flex align-items-center justify-content-center text-center'>
+                  <Col xl={6} lg={12} md={12} className='projectName d-flex align-items-center justify-content-center text-center'>
                     <h1>{projectItem.name}</h1>
                   </Col>
                 </Row>
                 <Row className={`d-flex ${projectItem.id % 2 ? '' : 'flex-row-reverse'}`}>
                   <Col lg={projectItem.projectRepo?.github?.icon ? 10 : 12}>
-                    <h2>{projectItem.languages}</h2>
+                    <h2 className={`d-flex ${projectItem.id % 2 ? 'justify-content-start' : 'justify-content-end'}`}>{projectItem.languages}</h2>
                   </Col>
                   <Col lg={projectItem.projectRepo?.github?.icon ? 2 : 0}>
                     <a title={`${projectItem.projectRepo?.title ?? null}`} href={projectItem.projectRepo?.repoLink ?? null} className={`d-flex ${projectItem.id % 2 ? '' : 'flex-row-reverse'} repoText`} target="_blank">
@@ -41,7 +41,7 @@ export default function projects() {
                     </a>
                   </Col>
                 </Row>
-                <Row className='projectIconBox justify-content-between'>
+                <Row className='projectIconBox justify-content-evenly'>
                   {projectItem.languageIcon.map(
                     (icon: any) => {
                       return (
@@ -59,7 +59,7 @@ export default function projects() {
                 </Row>
                 <Row>
                   <Col>
-                    <h3 className='mt-3 mb-5'>{projectItem.description}</h3>
+                    <h3 className='mt-3 mb-5 text-center'>{projectItem.description}</h3>
                   </Col>
                 </Row>
               </Col>

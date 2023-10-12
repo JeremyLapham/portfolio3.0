@@ -62,10 +62,10 @@ h3 {
   font-family: text;
 }
 
-Image {
+/* Image {
   max-width: 100%;
   height: auto;
-}
+} */
 
 @media (max-width: 1024px) {
   .pageMargin {

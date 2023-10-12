@@ -24,7 +24,7 @@
 
 .meImage {
     position: absolute;
-    height: 500px;
+    width: 100%;
     border-radius: 10%;
     object-fit: contain;
     z-index: -1;
@@ -51,9 +51,10 @@
 }
 
 .projectImage {
-    height: 400px;
-    width: 700px;
-    object-fit: contain;
+    /* height: 400px; */
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
 }
 
 .repoText {
@@ -75,10 +76,10 @@
 
 .projectIconBox {
     min-height: auto;
-    width: auto;
     background-color: grey;
     border-radius: 10px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+    margin: 0 4px;
 }
 
 .active {
@@ -238,7 +239,6 @@
 @media (max-width: 430px) {
     .meImage {
         right: 0;
-        height: 300px;
     }
 
     .iconMargin {

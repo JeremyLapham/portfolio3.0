@@ -51,7 +51,6 @@
 }
 
 .projectImage {
-    /* height: 400px; */
     width: 100%;
     height: 100%;
     object-fit:contain;
@@ -60,6 +59,8 @@
 .repoText {
     text-decoration: none;
     color: white !important;
+    display: grid;
+    place-items: center;
 }
 
 .skillBox {

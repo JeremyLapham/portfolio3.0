@@ -67,10 +67,18 @@ const projectSet = [
     projectRepo: {
       github: {
         icon: <SiGithub size={40} className="navText" color='white' />,
-        text: "Remember Repo",
+        text: "Remember Client Repo",
       },
       repoLink: "https://github.com/JeremyLapham/rememberwhenvite",
       title: "Jeremy's Remember When Frontend Github repository",
+    },
+    projectAPIRepo: {
+      github: {
+        icon: <SiGithub size={40} className="navText" color='black' />,
+        text: "Remember API Repo",
+      },
+      repoLink: "https://github.com/EXgarcia/RememberWhen",
+      title: "Elizaar's Remember When Backend Github repository",
     },
   },
   {

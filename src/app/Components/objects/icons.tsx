@@ -24,19 +24,19 @@ import { IIntroIcons, LanguageIcon } from "@/app/Interfaces/Language";
 
 export const introIcons: IIntroIcons[] = [
   {
-    icon: <BsLinkedin size={80} color={"white"} />,
+    icon: <BsLinkedin size={75} color={"white"} />,
     link: "https://www.linkedin.com/in/jeremylapham/",
     target: "_blank",
     show: false,
   },
   {
-    icon: <FaSquareGithub size={87} color={"white"} />,
+    icon: <FaSquareGithub size={82} color={"white"} />,
     link: "https://github.com/JeremyLapham",
     target: "_blank",
     show: false,
   },
   {
-    icon: <FaNewspaper size={84} color={"white"} />,
+    icon: <FaNewspaper size={79} color={"white"} />,
     link: "",
     target: "",
     show: true,

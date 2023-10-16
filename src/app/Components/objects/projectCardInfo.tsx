@@ -8,15 +8,16 @@ import {
   SiGithub,
 } from "react-icons/si";
 import { BsServer } from "react-icons/bs";
-import pokemonAPI from '../../Images/pokemonAPI.png'
-import rememberWhen from '../../Images/rememberwhen.png'
-import adviceGen from '../../Images/advice.png'
-import iHub from '../../Images/ihub.png'
-import CAPTAIN from '../../Images/CAPTAIN.png'
+import pokemonAPI from "@/app/Images/pokemonAPI.png";
+import rememberWhen from "@/app/Images/rememberwhen.png";
+import adviceGen from "@/app/Images/advice.png";
+import iHub from "@/app/Images/ihub.png";
+import CAPTAIN from "@/app/Images/CAPTAIN.png";
+import { IProjects } from "@/app/Interfaces/Projects";
 
-const projectSet = [
+const projectSet: IProjects[] = [
   {
-    id:1,
+    id: 1,
     img: iHub,
     name: "IHub",
     languages: "React | TypeScript | Bootstrap | C# | SQL ",
@@ -27,10 +28,10 @@ const projectSet = [
       { icon: <SiReact size={50} color="#2C3033" />, text: "React" },
       { icon: <SiTypescript size={50} color="#2C3033" />, text: "Typescript" },
       { icon: <SiBootstrap size={50} color="#2C3033" />, text: "Bootstrap" },
-      { icon: <SiCsharp size={50} color="#2C3033" />, text: "C Sharp", },
+      { icon: <SiCsharp size={50} color="#2C3033" />, text: "C Sharp" },
       { icon: <BsServer size={50} color="#2C3033" />, text: "SQL" },
     ],
-    projectRepo: null
+    projectRepo: null,
   },
   {
     id: 2,
@@ -44,10 +45,10 @@ const projectSet = [
       { icon: <SiAngular size={50} color="#2C3033" />, text: "Angular" },
       { icon: <SiTypescript size={50} color="#2C3033" />, text: "TypeScript" },
       { icon: <SiBootstrap size={50} color="#2C3033" />, text: "Bootstrap" },
-      { icon: <SiCsharp size={50} color="#2C3033" />, text: "C Sharp", },
+      { icon: <SiCsharp size={50} color="#2C3033" />, text: "C Sharp" },
       { icon: <BsServer size={50} color="#2C3033" />, text: "SQL" },
     ],
-    projectRepo: null
+    projectRepo: null,
   },
   {
     id: 3,
@@ -61,12 +62,12 @@ const projectSet = [
       { icon: <SiReact size={50} color="#2C3033" />, text: "React" },
       { icon: <SiTypescript size={50} color="#2C3033" />, text: "Typescript" },
       { icon: <SiBootstrap size={50} color="#2C3033" />, text: "Bootstrap" },
-      { icon: <SiCsharp size={50} color="#2C3033" />, text: "C Sharp", },
+      { icon: <SiCsharp size={50} color="#2C3033" />, text: "C Sharp" },
       { icon: <BsServer size={50} color="#2C3033" />, text: "SQL" },
     ],
     projectRepo: {
       github: {
-        icon: <SiGithub size={40} className="navText" color='white' />,
+        icon: <SiGithub size={40} className="navText" color="white" />,
         text: "Remember Client Repo",
       },
       repoLink: "https://github.com/JeremyLapham/rememberwhenvite",
@@ -74,7 +75,7 @@ const projectSet = [
     },
     projectAPIRepo: {
       github: {
-        icon: <SiGithub size={40} className="navText" color='black' />,
+        icon: <SiGithub size={40} className="navText" color="black" />,
         text: "Remember API Repo",
       },
       repoLink: "https://github.com/EXgarcia/RememberWhen",
@@ -82,7 +83,7 @@ const projectSet = [
     },
   },
   {
-    id:4,
+    id: 4,
     img: pokemonAPI,
     name: "Pokemon API",
     languages: "React | JavaScript | Bootstrap",
@@ -96,7 +97,7 @@ const projectSet = [
     ],
     projectRepo: {
       github: {
-        icon: <SiGithub size={40} className="navText" color='white' />,
+        icon: <SiGithub size={40} className="navText" color="white" />,
         text: "Pokemon Repo",
       },
       repoLink: "https://github.com/JeremyLapham/ReactRebuildPokemonAPI",
@@ -133,7 +134,7 @@ const projectSet = [
     ],
     projectRepo: {
       github: {
-        icon: <SiGithub size={40} className="navText" color='white' />,
+        icon: <SiGithub size={40} className="navText" color="white" />,
         text: "Advice Repo",
       },
       repoLink: "https://github.com/JeremyLapham/Advice-Generator",
